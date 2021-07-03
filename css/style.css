@@ -121,13 +121,13 @@ body.home.light .home-details h6 {
 }
 
 body.home.light .bg {
-  /* background-image: url(../images/light.jpg); */
-  /* box-shadow: 0 0 7px rgba(0,0,0,.3); */
-  background-image: none;
+  background-image: url(../images/light.jpg);
+  box-shadow: 0 0 7px rgba(0,0,0,.3);
+  /* background-image: none; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  box-shadow: none;
+  /* box-shadow: none; */
 }
 
 body.light .preloader .black_wall {
