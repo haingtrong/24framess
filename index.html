@@ -1,19 +1,20 @@
-<!DOCTYPE html><html lang="vi" style class=" js csstransforms3d csstransitions"><head>
+<!DOCTYPE html>
+<html lang="vi" style class=" js csstransforms3d csstransitions">
+
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <title>Home - Fps24 Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Template Google Fonts -->
-    <link href="css/css.css" rel="stylesheet">
-    <link href="css/css_1.css" rel="stylesheet">
-
     <!-- Template CSS Files -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
     <link href="css/preloader.min.css" rel="stylesheet">
     <link href="css/circle.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -33,120 +34,194 @@
     </style>
 </head>
 
-<body class="home light at-bottom"><div id="preloader" class="preloader off"><div class="black_wall"></div><div class="loader"></div></div>
-<!-- Live Style Switcher Starts - demo only -->
-<div id="switcher" class>
-    <div class="content-switcher">
-        <div id="hideSwitcher">×</div>
+<body class="home light at-bottom">
+    <div id="preloader" class="preloader off">
+        <div class="black_wall"></div>
+        <div class="loader"></div>
     </div>
-</div>
-<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
-<!-- Live Style Switcher Ends - demo only -->
-<!-- Header Starts -->
-<header class="header" id="navbar-collapse-toggle">
-    <!-- Fixed Navigation Starts -->
-    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1 no-transform revealator-within">
-        <li class="icon-box active">
-            <i class="fa fa-home"></i>
-            <a href="index.html">
-                <h2>Home</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-user"></i>
-            <a href="about.html">
-                <h2>About</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-briefcase"></i>
-            <a href="portfolio.html">
-                <h2>Portfolio</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-envelope-open"></i>
-            <a href="contact.html">
-                <h2>Contact</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-comments"></i>
-            <a href="blog.html">
-                <h2>Blog</h2>
-            </a>
-        </li>
-    </ul>
-    <!-- Fixed Navigation Ends -->
-    <!-- Mobile Menu Starts -->
-    <nav role="navigation" class="d-block d-lg-none">
-        <div id="menuToggle">
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="list-unstyled" id="menu">
-                <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
-            </ul>
+    <!-- Live Style Switcher Starts - demo only -->
+    <div id="switcher" class>
+        <div class="content-switcher">
+            <div id="hideSwitcher">×</div>
         </div>
-    </nav>
-    <!-- Mobile Menu Ends -->
-</header>
-<!-- Header Ends -->
-<!-- Main Content Starts -->
-<!-- <video autoplay loop muted class="video-main">
+    </div>
+    <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+    <!-- Live Style Switcher Ends - demo only -->
+    <!-- Header Starts -->
+    <header class="header" id="navbar-collapse-toggle">
+        <!-- Fixed Navigation Starts -->
+        <ul
+            class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1 no-transform revealator-within">
+            <li class="icon-box active">
+                <i class="fa fa-home"></i>
+                <a href="index.html">
+                    <h2>Home</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-user"></i>
+                <a href="about.html">
+                    <h2>About</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-briefcase"></i>
+                <a href="portfolio.html">
+                    <h2>Portfolio</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-envelope-open"></i>
+                <a href="contact.html">
+                    <h2>Contact</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-comments"></i>
+                <a href="blog.html">
+                    <h2>Blog</h2>
+                </a>
+            </li>
+        </ul>
+        <!-- Fixed Navigation Ends -->
+        <!-- Mobile Menu Starts -->
+        <nav role="navigation" class="d-block d-lg-none">
+            <div id="menuToggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="list-unstyled" id="menu">
+                    <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                    <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                    <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                    <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile Menu Ends -->
+    </header>
+    <!-- Header Ends -->
+    <!-- Main Content Starts -->
+    <!-- <video autoplay loop muted class="video-main">
     <source type="video/mp4" src="/media/finalvideoweb1.mp4">
     <source type="video/webm" src="/media/video.mp4">
 </video> -->
-<!-- <picture class="position-absolute">
-    <img src="/images/webpt2.png" alt="">
+    <!-- <picture class="position-absolute">
+    <img class='lazyload' src='/images/load.gif' data-src="/images/webpt2.png" alt="">
 </picture> -->
-<section class="container-fluid main-container container-home p-0 revealator-slideup revealator-once revealator-delay1 no-transform revealator-partially-above revealator-within">
-    <div class="color-block d-none d-lg-block"></div>
-    <div class="row home-details-container align-items-center">
-        <div class="col-lg-4 bg position-fixed d-none d-lg-block">
-            <!-- <iframe src="/media/video.mp4?autoplay=1" height="calc(100vh - 80px)" frameborder="0"></iframe> -->
-        </div>
-        <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
-            <div>
-                <img src="images/img-mobile.jpg" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture">
-                <h1 class="text-uppercase poppins-font p-0">FPS24<span>VIDEO EDITer</span></h1>
-                <p class="open-sans-font">Hight quality video editing at unbeatable prices</p>
-                <div class="col-md-12">
-                    <p class="col-md-4">TURNAROUND TIME</p>
-                    <p class="col-md-4">QUALITY</p>
-                    <p class="col-md-4">SUPPORT</p>
-                    <p class="col-md-4">FREE TRIAL</p>
+    <section
+        class="container-fluid main-container container-home p-0 revealator-slideup revealator-once revealator-delay1 no-transform revealator-partially-above revealator-within">
+        <div class="color-block d-none d-lg-block"></div>
+        <div class="row home-details-container align-items-center">
+            <div class="col-lg-4 bg position-fixed d-none d-lg-block"
+                style="background-image: none;overflow: hidden; padding: 0;">
+                <div class="autoplay w-100 h-100 bg d-none d-lg-block"
+                    style="background-image: none;height: 100%;left: 0;top: 0;">
+                    <img class='lazyload' src='/images/load.gif' data-src="/images/03.png" alt="">
+                    <img class='lazyload' src='/images/load.gif' data-src="/images/01.png" alt="">
+                    <img class='lazyload' src='/images/load.gif' data-src="/images/02.jpg" alt="">
+                    <img class='lazyload' src='/images/load.gif' data-src="/images/04.png" alt="">
+                    <img class='lazyload' src='/images/load.gif' data-src="/images/05.jpg" alt="">
                 </div>
-                <a class="button" href="about.html">
-                    <span class="button-text">more about me</span>
-                    <span class="button-icon fa fa-arrow-right"></span>
-                </a>
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
+                <div>
+                    <img class='lazyload img-fluid main-img-mobile d-none d-sm-block d-lg-none' src='/images/load.gif'
+                        data-src="images/img-mobile.jpg" alt="my picture">
+                    <div class="logo d-flex align-items-center">
+                        <img height="124px" class="img-fluid" src="/images/logo.png" alt="">
+                        <h1 class="text-uppercase poppins-font p-0">FPS24<span>Hight quality video editing</span></h1>
+                    </div>
+                    <!-- <p class="open-sans-font home">Hight quality video editing at unbeatable prices</p> -->
+                    <div class="mt-3">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-12">
+                                <p class="nav-home nav-home-1" tab-id="home-pill-1">TURNAROUND TIME</p>
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <p class="nav-home-content" id="home-pill-1">Receive video after 12-24 hour
+                                    turnaround
+                                    and
+                                    can be faster upon request</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-12">
+                                <p class="nav-home nav-home-2" tab-id="home-pill-2">QUALITY</p>
+                            </div>
+                            <div class="col-md-9 col-sm-12" style="padding-right: 30px;">
+                                <p class="nav-home-content" id="home-pill-2">We make sure the editing meets your target,
+                                    requirements and purposes before delivering them back to you</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-12">
+                                <p class="nav-home nav-home-3" tab-id="home-pill-3">SUPPORT</p>
+                            </div>
+                            <div class="col-md-9 col-sm-12">
+                                <p class="nav-home-content" id="home-pill-3">Contact us via email for any questions or
+                                    requirements</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-12">
+                                <p class="nav-home nav-home-4" tab-id="home-pill-4">FREE TRIAL</p>
+                            </div>
+                            <div class="col-md-9 col-sm-12">
+                                <p class="nav-home-content" id="home-pill-4">Get 3-5 sample video edited for free on
+                                    first
+                                    trial</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="button mt-3" href="about.html">
+                        <span class="button-text">more about us</span>
+                        <span class="button-icon fa fa-arrow-right"></span>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- Main Content Ends -->
+    </section>
+    <!-- Main Content Ends -->
 
-<!-- Template JS Files -->
-<script src="js/jquery-3.5.0.min.js"></script>
-<!-- <script src="js/styleswitcher.js"></script> -->
-<!-- <script src="js/preloader.min.js"></script> -->
-<script src="js/fm.revealator.jquery.min.js"></script>
-<!-- <script src="js/imagesloaded.pkgd.min.js"></script> -->
-<!-- <script src="js/masonry.pkgd.min.js"></script> -->
-<!-- <script src="js/classie.js"></script> -->
-<!-- <script src="js/cbpGridGallery.js"></script> -->
-<!-- <script src="js/jquery.hoverdir.js"></script> -->
-<!-- <script src="js/popper.min.js"></script> -->
-<script src="js/bootstrap.js"></script>
-<script src="js/custom.js"></script>
+    <!-- Template JS Files -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <!-- <script src="js/styleswitcher.js"></script> -->
+    <script src="js/preloader.min.js"></script>
+    <script src="js/lazysizes.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fm.revealator.jquery.min.js"></script>
+    <!-- <script src="js/imagesloaded.pkgd.min.js"></script> -->
+    <!-- <script src="js/masonry.pkgd.min.js"></script> -->
+    <!-- <script src="js/classie.js"></script> -->
+    <!-- <script src="js/cbpGridGallery.js"></script> -->
+    <!-- <script src="js/jquery.hoverdir.js"></script> -->
+    <!-- <script src="js/popper.min.js"></script> -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        $('.autoplay').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true,
+            arrows: false,
+        });
+
+        $('.nav-home').click(function () {
+            var tabTarget = $(this).attr('tab-id');
+            $('.nav-home-content').removeClass('active');
+            $('.nav-home').removeClass('active');
+            $(this).addClass('active');
+            $('#' + tabTarget).addClass('active');
+        });
+    </script>
 
 
+</body>
 
-
-</body></html>
+</html>
