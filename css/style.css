@@ -42,6 +42,33 @@ Version: 1.0
 /*================================================== */
 
 /*** Miscellaneous ***/
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  src: url(../fonts/Poppins-Regular.woff2) format('woff2'), url(../fonts/Poppins-Regular.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 500;
+  src: url(../fonts/Poppins-Medium.woff2) format('woff2'), url(../fonts/Poppins-Medium.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  src: url(../fonts/OpenSans-Regular.woff2) format('woff2'), url(../fonts/OpenSans-Regular.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  src: url(../fonts/OpenSans-SemiBold.woff2) format('woff2'), url(../fonts/OpenSans-SemiBold.woff) format('woff');
+  font-display: swap;
+}
 
 html {
   overflow-x: hidden;
@@ -72,7 +99,7 @@ body {
 
 hr.separator {
   border-top: 1px solid #252525;
-  margin: 70px auto 55px;
+  margin: 50px auto;
   max-width: 40%;
 }
 
@@ -102,9 +129,114 @@ hr.separator {
 
 /*** Light Body ***/
 
+.autoplay .slick-list,
+.autoplay .slick-track {
+  height: 100%;
+}
+
+.autoplay .slick-dots {
+  bottom: 0;
+}
+
+.autoplay .slick-dots li.slick-active button {
+  background: #c4c4c4;
+}
+
+.autoplay .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.autoplay .slick-dots li button:before {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.nav-home {
+  cursor: pointer;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+  padding: 0;
+}
+
+.nav-home-content {
+  margin: 0 !important;
+  opacity: 0;
+  transition: all linear .3s;
+}
+
+.nav-home-content.active {
+  margin: 0 !important;
+  opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .home-details .nav-home-content {
+    display: none;
+    transition: all linear .3s;
+    margin: -10px 0 15px !important;
+  }
+
+  .home-details .nav-home-content.active {
+    display: block;
+  }
+}
+
+.nav-home:hover {
+  color: #4169e1;
+}
+
+.nav-home.active {
+  color: #4169e1;
+}
+
+.logo>img {
+  height: 115px;
+  margin-right: 40px;
+}
+
+.open-sans-font.home {
+  font-size: 16px;
+  line-height: 25px;
+  font-style: italic;
+}
+
+.rate_range {
+  background: #4169e1;
+  height: 100%;
+}
+
+.fake_rate {
+  background: url(/images/Sao.png)no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bg_rate {
+  width: 130px;
+  height: 24px;
+  margin-bottom: 36px;
+  background: #C4C4C4;
+  position: relative;
+}
+
 body.light {
   color: #666;
   background-color: #fff;
+}
+
+body.home.light .home-details h1 span {
+  font-size: 25px;
 }
 
 body.home.light .home-details h1 span,
@@ -122,7 +254,7 @@ body.home.light .home-details h6 {
 
 body.home.light .bg {
   background-image: url(../images/light.jpg);
-  box-shadow: 0 0 7px rgba(0,0,0,.3);
+  box-shadow: 0 0 7px rgba(0, 0, 0, .3);
   /* background-image: none; */
   background-size: cover;
   background-repeat: no-repeat;
@@ -573,8 +705,8 @@ body.light hr.separator {
 }
 
 .home .home-details>div {
-  max-width: 550px;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: 0 50px 0 auto;
 }
 
 .home .home-details h1 {
@@ -1319,7 +1451,7 @@ body.light hr.separator {
 
 @media (min-width: 1600px) {
   .home .home-details>div {
-    max-width: 600px;
+    max-width: 80%;
   }
 }
 
